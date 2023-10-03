@@ -348,7 +348,7 @@ nohup ./kube-apiserver \\
 --client-ca-file=/etc/kubernetes/cert/ca.pem \\
 --enable-bootstrap-token-auth \\
 --requestheader-allowed-names="aggregator" \\
---requestheader-client-ca-file=/etc/kubernetes/cert/ca.pem \\
+--requestheader-client-ca-file=${INSTALL_DIR}/conf/ca.pem \\
 --requestheader-extra-headers-prefix="X-Remote-Extra-" \\
 --requestheader-group-headers=X-Remote-Group \\
 --requestheader-username-headers=X-Remote-User \\
