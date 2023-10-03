@@ -345,7 +345,7 @@ nohup ./kube-apiserver \\
 --audit-policy-file=${INSTALL_DIR}/conf/audit-policy.yaml \\
 --profiling \\
 --anonymous-auth=false \\
---client-ca-file=/etc/kubernetes/cert/ca.pem \\
+--client-ca-file=${INSTALL_DIR}/conf/ca.pem \\
 --enable-bootstrap-token-auth \\
 --requestheader-allowed-names="aggregator" \\
 --requestheader-client-ca-file=${INSTALL_DIR}/conf/ca.pem \\
